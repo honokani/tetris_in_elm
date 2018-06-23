@@ -6,7 +6,7 @@
 
    *  about **elm**  
       +  source directories  
-         -  At `source-directories` in `elm-package.json`, use `src` instead of `.`.  
+         -  At `source-directories` in `elm-package.json`, use `"src"` instead of `"."`.  
       +  look for package  
          - `elm-package install evancz/elm-graphics`  
       +  `Collage` and `Element`  
