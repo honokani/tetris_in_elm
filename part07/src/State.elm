@@ -65,8 +65,10 @@ updateAct : Input -> State -> State
 updateAct ipt sOld =
     case ipt of
         Enter     -> { sOld | falling = TE.rotateR sOld.falling }
-        Dir Left  -> { sOld | falling = TE.shift (-1, 0) sOld.falling }
-        Dir Right -> { sOld | falling = TE.shift ( 1, 0) sOld.falling }
+        Dir Up    -> { sOld | falling = TE.shift ( 1, 0) sOld.falling }
+        Dir Down  -> { sOld | falling = TE.shift (-1, 0) sOld.falling }
+        Dir Left  -> { sOld | falling = TE.shift ( 0,-1) sOld.falling }
+        Dir Right -> { sOld | falling = TE.shift ( 0, 1) sOld.falling }
         _         -> sOld
 
 subscriptions : Model -> Sub Msg
