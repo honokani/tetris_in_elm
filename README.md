@@ -13,5 +13,5 @@
          `clone` and `elm-package install` and `elm-reactor -p 3000`  
          and access ` http://localhost:3000`  
          then, select `State.elm`  
-         command is following, Enter:rotation, ArrowKey:move
+         command is following, Enter : rotation, ArrowKey : move
 
